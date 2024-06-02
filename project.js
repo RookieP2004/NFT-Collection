@@ -11,10 +11,10 @@ Assessment Requirements
 // create a variable to hold your rapp records
 let rappCollection = [];
 
-// this function will take in some values as parameters, create a
-// rapp record object using the parameters passed to it for its metadata,
+// this function will take in some values as parameters, create an
+// NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintRappRecord(title, artist, year, genre) {
+function mintNFT (title, artist, year, genre) {
     const rappRecord = {
         title: title,
         artist: artist,
@@ -24,9 +24,9 @@ function mintRappRecord(title, artist, year, genre) {
     rappCollection.push(rappRecord);
 }
 
-// create a "loop" that will go through an "array" of rapp records
+// create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
-function listRappRecords() {
+function listNFTs () {
     for (let i = 0; i < rappCollection.length; i++) {
         const record = rappCollection[i];
         console.log("Title: " + record.title);
@@ -37,20 +37,20 @@ function listRappRecords() {
     }
 }
 
-// print the total number of rapp records we have minted to the console
+// print the total number of NFTs we have minted to the console
 function getTotalSupply() {
     console.log("Total Rapp Records Minted: " + rappCollection.length);
 }
 
 // call your functions below this line
-mintRappRecord("Lose Yourself", "Eminem", 2002, "Hip-Hop");
-mintRappRecord("Juice", "Lil Uzi Vert", 2017, "Trap");
-mintRappRecord("God's Plan", "Drake", 2018, "Hip-Hop");
-mintRappRecord("Old Town Road", "Lil Nas X", 2018, "Country-Rap");
-mintRappRecord("Humble", "Kendrick Lamar", 2017, "Hip-Hop");
-mintRappRecord("Flex", "Polo G", 2020, "Drill");
-mintRappRecord("Rockstar", "DaBaby", 2020, "Trap");
-mintRappRecord("Laugh Now Cry Later", "Drake", 2020, "Hip-Hop");
-mintRappRecord("WAP", "Cardi B", 2020, "Hip-Hop");
-listRappRecords();
+mintNFT("Lose Yourself", "Eminem", 2002, "Hip-Hop");
+mintNFT("Juice", "Lil Uzi Vert", 2017, "Trap");
+mintNFT("God's Plan", "Drake", 2018, "Hip-Hop");
+mintNFT("Old Town Road", "Lil Nas X", 2018, "Country-Rap");
+mintNFT("Humble", "Kendrick Lamar", 2017, "Hip-Hop");
+mintNFT("Flex", "Polo G", 2020, "Drill");
+mintNFT("Rockstar", "DaBaby", 2020, "Trap");
+mintNFT("Laugh Now Cry Later", "Drake", 2020, "Hip-Hop");
+mintNFT("WAP", "Cardi B", 2020, "Hip-Hop");
+listNFTs();
 getTotalSupply();
