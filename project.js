@@ -27,13 +27,14 @@ function mintRappRecord(title, artist, year, genre) {
 // create a "loop" that will go through an "array" of rapp records
 // and print their metadata with console.log()
 function listRappRecords() {
-    rappCollection.forEach(record => {
+    for (let i = 0; i < rappCollection.length; i++) {
+        const record = rappCollection[i];
         console.log("Title: " + record.title);
         console.log("Artist: " + record.artist);
         console.log("Year: " + record.year);
         console.log("Genre: " + record.genre);
         console.log("--------------------------");
-    });
+    }
 }
 
 // print the total number of rapp records we have minted to the console
